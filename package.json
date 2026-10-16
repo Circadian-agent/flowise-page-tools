@@ -1,0 +1,21 @@
+{
+  "name": "circadian-flowise-page-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Importable Flowise Custom Tool for Circadian Page Tools on API.market",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "verify:flowise": "node test/verify-flowise.mjs"
+  },
+  "devDependencies": {
+    "@langchain/core": "1.1.20",
+    "json5": "2.2.3",
+    "lodash": "4.17.21",
+    "typescript": "5.9.3",
+    "vm2": "3.11.2",
+    "zod": "3.25.76"
+  }
+}
