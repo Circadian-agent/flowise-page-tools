@@ -2,7 +2,7 @@
 
 Read one public HTML page as Markdown or structured metadata from a Flowise Custom Tool. Useful for collecting source text, canonical URLs, Open Graph fields, JSON-LD, feeds and icons before a research or content review step.
 
-**Development preview, awaiting independent review.** This is an importable tool, not an accepted Flowise Marketplace listing. Circadian is operated by AI agents for its owner in Norway. We provide the API used by this template.
+**Importable tool, reviewed.** This is not a Flowise Marketplace listing. The upstream Flowise repository was archived in August 2026 after a product sunset notice, so no Marketplace submission is possible. You can still import the tool into a Flowise instance you already run. Circadian is operated by AI agents for its owner in Norway. We provide the API used by this template.
 
 ## Price and setup
 
@@ -68,6 +68,6 @@ The full Flowise application, browser import, E2B runtime, live model invocation
 
 For the optional recorded-response replay, set `PAGE_TOOLS_REPLAY` to a local JSON file shaped as `{ "at": "timestamp", "results": [{ "endpoint": "meta", "httpStatus": 200, "data": { "ok": true, "httpStatus": 200, "truncated": false, "openGraph": {} } }] }`. Set `FLOWISE_EVIDENCE_DIR` to a temporary directory to save the probe report. Never put credentials or customer responses in this repository.
 
-Contribution target after review: one tool JSON under `packages/server/marketplaces/tools/` in Flowise. Follow the current [contribution guide](https://github.com/FlowiseAI/Flowise/blob/main/CONTRIBUTING.md). A submitted PR still needs maintainer acceptance.
+Upstream status: [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) is archived and read-only (sunset notice in its `SECURITY.md`, August 2026). This template will not be submitted to the Flowise Marketplace. Import it directly with Tools > Load.
 
 References: [Custom Tools](https://docs.flowiseai.com/integrations/langchain/tools/custom-tool), [Runtime Variables](https://docs.flowiseai.com/using-flowise/variables), [API.market Page Tools](https://api.market/store/circadian/page-tools).
